@@ -1,0 +1,1724 @@
+name: filename
+version: Extended 7.0
+build: " (v2021-03-13)"
+time:
+  second: 5
+  minute: 7
+  hour: 12
+  weekday: 2
+  day: 4
+  month: 1
+  year: 1999
+mods:
+  - "xcom1 ver: 1.0"
+ironman: true
+---
+difficulty: 4
+end: 0
+monthsPassed: 0
+graphRegionToggles: ""
+graphCountryToggles: ""
+graphFinanceToggles: ""
+rng: 225343859160863844
+funds:
+  - 3264000
+maintenance:
+  - 0
+userNotes:
+  []
+researchScores:
+  - 0
+incomes:
+  - 6013000
+expenditures:
+  - 2749000
+warned: false
+globeLon: 0
+globeLat: 0
+globeZoom: 0
+ids:
+  ALIEN_MISSIONS: 3
+  STR_INTERCEPTOR: 3
+  STR_SKYRANGER: 2
+  STR_SOLDIER: 31
+  STR_UFO: 2
+  STR_UFO_UNIQUE: 3
+countries:
+  - type: STR_USA
+    funding:
+      - 842000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 4
+  - type: STR_RUSSIA
+    funding:
+      - 365000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_UK
+    funding:
+      - 398000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_FRANCE
+    funding:
+      - 430000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_GERMANY
+    funding:
+      - 349000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_ITALY
+    funding:
+      - 254000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_SPAIN
+    funding:
+      - 166000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_CHINA
+    funding:
+      - 217000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_JAPAN
+    funding:
+      - 685000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_INDIA
+    funding:
+      - 247000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_BRAZIL
+    funding:
+      - 468000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 42
+  - type: STR_AUSTRALIA
+    funding:
+      - 500000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_NIGERIA
+    funding:
+      - 301000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_SOUTH_AFRICA
+    funding:
+      - 360000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_EGYPT
+    funding:
+      - 210000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 1
+  - type: STR_CANADA
+    funding:
+      - 221000
+    activityXcom:
+      - 0
+    activityAlien:
+      - 1
+regions:
+  - type: STR_NORTH_AMERICA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 7
+  - type: STR_ARCTIC
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_ANTARCTICA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_SOUTH_AMERICA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 93
+  - type: STR_EUROPE
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_NORTH_AFRICA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 13
+  - type: STR_SOUTHERN_AFRICA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_CENTRAL_ASIA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_SOUTH_EAST_ASIA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_SIBERIA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_AUSTRALASIA
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_PACIFIC
+    activityXcom:
+      - 0
+    activityAlien:
+      - 2
+  - type: STR_NORTH_ATLANTIC
+    activityXcom:
+      - 0
+    activityAlien:
+      - 1
+  - type: STR_SOUTH_ATLANTIC
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+  - type: STR_INDIAN_OCEAN
+    activityXcom:
+      - 0
+    activityAlien:
+      - 0
+bases:
+  - lon: 0.1142086971830604
+    lat: -0.22409309230137084
+    name: First
+    facilities:
+      - type: STR_ACCESS_LIFT
+        x: 0
+        y: 2
+      - type: STR_HANGAR
+        x: 0
+        y: 0
+      - type: STR_HANGAR
+        x: 2
+        y: 0
+      - type: STR_HANGAR
+        x: 4
+        y: 0
+      - type: STR_GENERAL_STORES
+        x: 0
+        y: 3
+      - type: STR_LIVING_QUARTERS
+        x: 0
+        y: 4
+      - type: STR_LABORATORY
+        x: 1
+        y: 4
+      - type: STR_WORKSHOP
+        x: 2
+        y: 4
+      - type: STR_SMALL_RADAR_SYSTEM
+        x: 3
+        y: 4
+    soldiers:
+      - type: STR_SOLDIER
+        id: 1
+        name: Mathieu Vermeulen
+        nationality: 3
+        initialStats:
+          tu: 57
+          stamina: 47
+          health: 30
+          bravery: 30
+          reactions: 35
+          firing: 45
+          throwing: 60
+          strength: 25
+          psiStrength: 88
+          psiSkill: 0
+          melee: 28
+          mana: 0
+        currentStats:
+          tu: 57
+          stamina: 47
+          health: 30
+          bravery: 30
+          reactions: 35
+          firing: 45
+          throwing: 60
+          strength: 25
+          psiStrength: 88
+          psiSkill: 0
+          melee: 28
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 1
+        lookVariant: 48
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 2
+        name: Isao Kobayashi
+        nationality: 20
+        initialStats:
+          tu: 52
+          stamina: 62
+          health: 40
+          bravery: 30
+          reactions: 37
+          firing: 60
+          throwing: 58
+          strength: 34
+          psiStrength: 35
+          psiSkill: 0
+          melee: 20
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 62
+          health: 40
+          bravery: 30
+          reactions: 37
+          firing: 60
+          throwing: 58
+          strength: 34
+          psiStrength: 35
+          psiSkill: 0
+          melee: 20
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 1
+        lookVariant: 53
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 3
+        name: Arnold Rosza
+        nationality: 17
+        initialStats:
+          tu: 54
+          stamina: 60
+          health: 27
+          bravery: 50
+          reactions: 33
+          firing: 44
+          throwing: 59
+          strength: 29
+          psiStrength: 7
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        currentStats:
+          tu: 54
+          stamina: 60
+          health: 27
+          bravery: 50
+          reactions: 33
+          firing: 44
+          throwing: 59
+          strength: 29
+          psiStrength: 7
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 0
+        lookVariant: 53
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 4
+        name: Gennaro Romano
+        nationality: 19
+        initialStats:
+          tu: 51
+          stamina: 43
+          health: 37
+          bravery: 50
+          reactions: 41
+          firing: 48
+          throwing: 65
+          strength: 20
+          psiStrength: 81
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        currentStats:
+          tu: 51
+          stamina: 43
+          health: 37
+          bravery: 50
+          reactions: 41
+          firing: 48
+          throwing: 65
+          strength: 20
+          psiStrength: 81
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 1
+        lookVariant: 58
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 5
+        name: Ruben Pauwels
+        nationality: 3
+        initialStats:
+          tu: 55
+          stamina: 46
+          health: 37
+          bravery: 30
+          reactions: 52
+          firing: 52
+          throwing: 58
+          strength: 30
+          psiStrength: 10
+          psiSkill: 0
+          melee: 20
+          mana: 0
+        currentStats:
+          tu: 55
+          stamina: 46
+          health: 37
+          bravery: 30
+          reactions: 52
+          firing: 52
+          throwing: 58
+          strength: 30
+          psiStrength: 10
+          psiSkill: 0
+          melee: 20
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 1
+        lookVariant: 19
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 6
+        name: Kristof Nadasdy
+        nationality: 17
+        initialStats:
+          tu: 57
+          stamina: 61
+          health: 31
+          bravery: 40
+          reactions: 31
+          firing: 48
+          throwing: 67
+          strength: 23
+          psiStrength: 54
+          psiSkill: 0
+          melee: 38
+          mana: 0
+        currentStats:
+          tu: 57
+          stamina: 61
+          health: 31
+          bravery: 40
+          reactions: 31
+          firing: 48
+          throwing: 67
+          strength: 23
+          psiStrength: 54
+          psiSkill: 0
+          melee: 38
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 0
+        lookVariant: 30
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 7
+        name: Bethany McNeil
+        nationality: 0
+        initialStats:
+          tu: 55
+          stamina: 68
+          health: 26
+          bravery: 10
+          reactions: 53
+          firing: 47
+          throwing: 62
+          strength: 32
+          psiStrength: 46
+          psiSkill: 0
+          melee: 27
+          mana: 0
+        currentStats:
+          tu: 55
+          stamina: 68
+          health: 26
+          bravery: 10
+          reactions: 53
+          firing: 47
+          throwing: 62
+          strength: 32
+          psiStrength: 46
+          psiSkill: 0
+          melee: 27
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 1
+        look: 2
+        lookVariant: 25
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 8
+        name: Eoin Collins
+        nationality: 18
+        initialStats:
+          tu: 50
+          stamina: 44
+          health: 29
+          bravery: 10
+          reactions: 30
+          firing: 60
+          throwing: 72
+          strength: 25
+          psiStrength: 23
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        currentStats:
+          tu: 50
+          stamina: 44
+          health: 29
+          bravery: 10
+          reactions: 30
+          firing: 60
+          throwing: 72
+          strength: 25
+          psiStrength: 23
+          psiSkill: 0
+          melee: 32
+          mana: 0
+        rank: 0
+        craft:
+          lon: 0.1142086971830604
+          lat: -0.22409309230137084
+          type: STR_SKYRANGER
+          id: 1
+        gender: 0
+        look: 2
+        lookVariant: 53
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 9
+        name: Sari Pulkkinen
+        nationality: 12
+        initialStats:
+          tu: 52
+          stamina: 69
+          health: 35
+          bravery: 40
+          reactions: 38
+          firing: 57
+          throwing: 80
+          strength: 38
+          psiStrength: 14
+          psiSkill: 0
+          melee: 40
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 69
+          health: 35
+          bravery: 40
+          reactions: 38
+          firing: 57
+          throwing: 80
+          strength: 38
+          psiStrength: 14
+          psiSkill: 0
+          melee: 40
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 0
+        lookVariant: 33
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 10
+        name: Gau Wei
+        nationality: 6
+        initialStats:
+          tu: 54
+          stamina: 40
+          health: 40
+          bravery: 30
+          reactions: 57
+          firing: 47
+          throwing: 51
+          strength: 36
+          psiStrength: 99
+          psiSkill: 0
+          melee: 30
+          mana: 0
+        currentStats:
+          tu: 54
+          stamina: 40
+          health: 40
+          bravery: 30
+          reactions: 57
+          firing: 47
+          throwing: 51
+          strength: 36
+          psiStrength: 99
+          psiSkill: 0
+          melee: 30
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 2
+        lookVariant: 61
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 11
+        name: Aniweta Iniebong
+        nationality: 23
+        initialStats:
+          tu: 52
+          stamina: 48
+          health: 31
+          bravery: 40
+          reactions: 45
+          firing: 47
+          throwing: 53
+          strength: 33
+          psiStrength: 18
+          psiSkill: 0
+          melee: 40
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 48
+          health: 31
+          bravery: 40
+          reactions: 45
+          firing: 47
+          throwing: 53
+          strength: 33
+          psiStrength: 18
+          psiSkill: 0
+          melee: 40
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 3
+        lookVariant: 42
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 12
+        name: Pedro Fernandez
+        nationality: 2
+        initialStats:
+          tu: 59
+          stamina: 62
+          health: 27
+          bravery: 60
+          reactions: 39
+          firing: 49
+          throwing: 56
+          strength: 20
+          psiStrength: 64
+          psiSkill: 0
+          melee: 25
+          mana: 0
+        currentStats:
+          tu: 59
+          stamina: 62
+          health: 27
+          bravery: 60
+          reactions: 39
+          firing: 49
+          throwing: 56
+          strength: 20
+          psiStrength: 64
+          psiSkill: 0
+          melee: 25
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 1
+        lookVariant: 42
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 13
+        name: Geslin Ntombolo
+        nationality: 7
+        initialStats:
+          tu: 60
+          stamina: 51
+          health: 40
+          bravery: 60
+          reactions: 41
+          firing: 64
+          throwing: 79
+          strength: 33
+          psiStrength: 3
+          psiSkill: 0
+          melee: 33
+          mana: 0
+        currentStats:
+          tu: 60
+          stamina: 51
+          health: 40
+          bravery: 60
+          reactions: 41
+          firing: 64
+          throwing: 79
+          strength: 33
+          psiStrength: 3
+          psiSkill: 0
+          melee: 33
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 3
+        lookVariant: 39
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 14
+        name: Yu-jin Cha
+        nationality: 22
+        initialStats:
+          tu: 52
+          stamina: 64
+          health: 32
+          bravery: 40
+          reactions: 32
+          firing: 47
+          throwing: 55
+          strength: 39
+          psiStrength: 73
+          psiSkill: 0
+          melee: 39
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 64
+          health: 32
+          bravery: 40
+          reactions: 32
+          firing: 47
+          throwing: 55
+          strength: 39
+          psiStrength: 73
+          psiSkill: 0
+          melee: 39
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 2
+        lookVariant: 61
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 15
+        name: Liviu Banica
+        nationality: 28
+        initialStats:
+          tu: 55
+          stamina: 65
+          health: 29
+          bravery: 20
+          reactions: 45
+          firing: 56
+          throwing: 76
+          strength: 27
+          psiStrength: 33
+          psiSkill: 0
+          melee: 38
+          mana: 0
+        currentStats:
+          tu: 55
+          stamina: 65
+          health: 29
+          bravery: 20
+          reactions: 45
+          firing: 56
+          throwing: 76
+          strength: 27
+          psiStrength: 33
+          psiSkill: 0
+          melee: 38
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 20
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 16
+        name: Carolina Rodriguez
+        nationality: 31
+        initialStats:
+          tu: 51
+          stamina: 55
+          health: 31
+          bravery: 60
+          reactions: 47
+          firing: 61
+          throwing: 50
+          strength: 40
+          psiStrength: 8
+          psiSkill: 0
+          melee: 21
+          mana: 0
+        currentStats:
+          tu: 51
+          stamina: 55
+          health: 31
+          bravery: 60
+          reactions: 47
+          firing: 61
+          throwing: 50
+          strength: 40
+          psiStrength: 8
+          psiSkill: 0
+          melee: 21
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 1
+        lookVariant: 3
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 17
+        name: Mojmir Smid
+        nationality: 8
+        initialStats:
+          tu: 51
+          stamina: 57
+          health: 34
+          bravery: 10
+          reactions: 52
+          firing: 64
+          throwing: 76
+          strength: 28
+          psiStrength: 14
+          psiSkill: 0
+          melee: 37
+          mana: 0
+        currentStats:
+          tu: 51
+          stamina: 57
+          health: 34
+          bravery: 10
+          reactions: 52
+          firing: 64
+          throwing: 76
+          strength: 28
+          psiStrength: 14
+          psiSkill: 0
+          melee: 37
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 60
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 18
+        name: Wendy Maes
+        nationality: 3
+        initialStats:
+          tu: 52
+          stamina: 49
+          health: 34
+          bravery: 40
+          reactions: 51
+          firing: 57
+          throwing: 56
+          strength: 34
+          psiStrength: 50
+          psiSkill: 0
+          melee: 35
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 49
+          health: 34
+          bravery: 40
+          reactions: 51
+          firing: 57
+          throwing: 56
+          strength: 34
+          psiStrength: 50
+          psiSkill: 0
+          melee: 35
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 0
+        lookVariant: 6
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 19
+        name: Natsumi Eguchi
+        nationality: 20
+        initialStats:
+          tu: 52
+          stamina: 64
+          health: 33
+          bravery: 40
+          reactions: 57
+          firing: 60
+          throwing: 52
+          strength: 34
+          psiStrength: 26
+          psiSkill: 0
+          melee: 26
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 64
+          health: 33
+          bravery: 40
+          reactions: 57
+          firing: 60
+          throwing: 52
+          strength: 34
+          psiStrength: 26
+          psiSkill: 0
+          melee: 26
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 0
+        lookVariant: 34
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 20
+        name: Vasil Andonov
+        nationality: 5
+        initialStats:
+          tu: 54
+          stamina: 50
+          health: 29
+          bravery: 60
+          reactions: 60
+          firing: 61
+          throwing: 80
+          strength: 31
+          psiStrength: 11
+          psiSkill: 0
+          melee: 21
+          mana: 0
+        currentStats:
+          tu: 54
+          stamina: 50
+          health: 29
+          bravery: 60
+          reactions: 60
+          firing: 61
+          throwing: 80
+          strength: 31
+          psiStrength: 11
+          psiSkill: 0
+          melee: 21
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 0
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 21
+        name: Ji-eun Cheon
+        nationality: 22
+        initialStats:
+          tu: 56
+          stamina: 66
+          health: 31
+          bravery: 10
+          reactions: 37
+          firing: 52
+          throwing: 53
+          strength: 35
+          psiStrength: 67
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        currentStats:
+          tu: 56
+          stamina: 66
+          health: 31
+          bravery: 10
+          reactions: 37
+          firing: 52
+          throwing: 53
+          strength: 35
+          psiStrength: 67
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 2
+        lookVariant: 15
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 22
+        name: Charlie King
+        nationality: 4
+        initialStats:
+          tu: 50
+          stamina: 40
+          health: 34
+          bravery: 10
+          reactions: 45
+          firing: 57
+          throwing: 52
+          strength: 40
+          psiStrength: 29
+          psiSkill: 0
+          melee: 25
+          mana: 0
+        currentStats:
+          tu: 50
+          stamina: 40
+          health: 34
+          bravery: 10
+          reactions: 45
+          firing: 57
+          throwing: 52
+          strength: 40
+          psiStrength: 29
+          psiSkill: 0
+          melee: 25
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 3
+        lookVariant: 47
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 23
+        name: Julius Holub
+        nationality: 30
+        initialStats:
+          tu: 59
+          stamina: 49
+          health: 40
+          bravery: 60
+          reactions: 47
+          firing: 69
+          throwing: 57
+          strength: 31
+          psiStrength: 48
+          psiSkill: 0
+          melee: 29
+          mana: 0
+        currentStats:
+          tu: 59
+          stamina: 49
+          health: 40
+          bravery: 60
+          reactions: 47
+          firing: 69
+          throwing: 57
+          strength: 31
+          psiStrength: 48
+          psiSkill: 0
+          melee: 29
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 1
+        lookVariant: 4
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 24
+        name: Pavla Borislavova
+        nationality: 5
+        initialStats:
+          tu: 59
+          stamina: 65
+          health: 36
+          bravery: 40
+          reactions: 54
+          firing: 70
+          throwing: 69
+          strength: 22
+          psiStrength: 10
+          psiSkill: 0
+          melee: 26
+          mana: 0
+        currentStats:
+          tu: 59
+          stamina: 65
+          health: 36
+          bravery: 40
+          reactions: 54
+          firing: 70
+          throwing: 69
+          strength: 22
+          psiStrength: 10
+          psiSkill: 0
+          melee: 26
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 0
+        lookVariant: 31
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 25
+        name: Igor Ivanov
+        nationality: 29
+        initialStats:
+          tu: 55
+          stamina: 55
+          health: 35
+          bravery: 60
+          reactions: 56
+          firing: 65
+          throwing: 60
+          strength: 37
+          psiStrength: 6
+          psiSkill: 0
+          melee: 33
+          mana: 0
+        currentStats:
+          tu: 55
+          stamina: 55
+          health: 35
+          bravery: 60
+          reactions: 56
+          firing: 65
+          throwing: 60
+          strength: 37
+          psiStrength: 6
+          psiSkill: 0
+          melee: 33
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 60
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 26
+        name: Ajala Olumodeji
+        nationality: 23
+        initialStats:
+          tu: 52
+          stamina: 61
+          health: 33
+          bravery: 30
+          reactions: 39
+          firing: 49
+          throwing: 52
+          strength: 38
+          psiStrength: 93
+          psiSkill: 0
+          melee: 24
+          mana: 0
+        currentStats:
+          tu: 52
+          stamina: 61
+          health: 33
+          bravery: 30
+          reactions: 39
+          firing: 49
+          throwing: 52
+          strength: 38
+          psiStrength: 93
+          psiSkill: 0
+          melee: 24
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 44
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 27
+        name: Ramazan Canatan
+        nationality: 33
+        initialStats:
+          tu: 56
+          stamina: 54
+          health: 39
+          bravery: 20
+          reactions: 59
+          firing: 66
+          throwing: 51
+          strength: 36
+          psiStrength: 5
+          psiSkill: 0
+          melee: 28
+          mana: 0
+        currentStats:
+          tu: 56
+          stamina: 54
+          health: 39
+          bravery: 20
+          reactions: 59
+          firing: 66
+          throwing: 51
+          strength: 36
+          psiStrength: 5
+          psiSkill: 0
+          melee: 28
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 1
+        lookVariant: 51
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 28
+        name: Lindsay Collins
+        nationality: 4
+        initialStats:
+          tu: 54
+          stamina: 54
+          health: 31
+          bravery: 20
+          reactions: 59
+          firing: 49
+          throwing: 59
+          strength: 31
+          psiStrength: 76
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        currentStats:
+          tu: 54
+          stamina: 54
+          health: 31
+          bravery: 20
+          reactions: 59
+          firing: 49
+          throwing: 59
+          strength: 31
+          psiStrength: 76
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        rank: 0
+        gender: 1
+        look: 0
+        lookVariant: 43
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 29
+        name: Krzysztof Wisniewski
+        nationality: 25
+        initialStats:
+          tu: 51
+          stamina: 49
+          health: 34
+          bravery: 10
+          reactions: 51
+          firing: 50
+          throwing: 64
+          strength: 39
+          psiStrength: 89
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        currentStats:
+          tu: 51
+          stamina: 49
+          health: 34
+          bravery: 10
+          reactions: 51
+          firing: 50
+          throwing: 64
+          strength: 39
+          psiStrength: 89
+          psiSkill: 0
+          melee: 36
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 6
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+      - type: STR_SOLDIER
+        id: 30
+        name: Joona Kokko
+        nationality: 12
+        initialStats:
+          tu: 58
+          stamina: 69
+          health: 30
+          bravery: 30
+          reactions: 57
+          firing: 47
+          throwing: 68
+          strength: 28
+          psiStrength: 4
+          psiSkill: 0
+          melee: 30
+          mana: 0
+        currentStats:
+          tu: 58
+          stamina: 69
+          health: 30
+          bravery: 30
+          reactions: 57
+          firing: 47
+          throwing: 68
+          strength: 28
+          psiStrength: 4
+          psiSkill: 0
+          melee: 30
+          mana: 0
+        rank: 0
+        gender: 0
+        look: 0
+        lookVariant: 59
+        missions: 0
+        kills: 0
+        armor: STR_NONE_UC
+        improvement: 0
+        psiStrImprovement: 0
+        tags: ~
+    crafts:
+      - lon: 0.1142086971830604
+        lat: -0.22409309230137084
+        id: 1
+        speedLon: 0
+        speedLat: 0
+        speedRadian: 0
+        speed: 0
+        type: STR_SKYRANGER
+        fuel: 1500
+        damage: 0
+        shield: 0
+        items:
+          STR_GRENADE: 8
+          STR_HC_AP_AMMO: 2
+          STR_HC_HE_AMMO: 2
+          STR_HEAVY_CANNON: 1
+          STR_PISTOL: 3
+          STR_PISTOL_CLIP: 5
+          STR_RIFLE: 6
+          STR_RIFLE_CLIP: 12
+        status: STR_READY
+        lonAuto: 0
+        latAuto: 0
+        tags: ~
+      - lon: 0.1142086971830604
+        lat: -0.22409309230137084
+        id: 1
+        speedLon: 0
+        speedLat: 0
+        speedRadian: 0
+        speed: 0
+        type: STR_INTERCEPTOR
+        fuel: 1000
+        damage: 0
+        shield: 0
+        weapons:
+          - type: STR_STINGRAY
+            ammo: 6
+          - type: STR_CANNON_UC
+            ammo: 200
+        items:
+          {}
+        status: STR_READY
+        lonAuto: 0
+        latAuto: 0
+        tags: ~
+      - lon: 0.1142086971830604
+        lat: -0.22409309230137084
+        id: 2
+        speedLon: 0
+        speedLat: 0
+        speedRadian: 0
+        speed: 0
+        type: STR_INTERCEPTOR
+        fuel: 1000
+        damage: 0
+        shield: 0
+        weapons:
+          - type: STR_STINGRAY
+            ammo: 6
+          - type: STR_CANNON_UC
+            ammo: 200
+        items:
+          {}
+        status: STR_READY
+        lonAuto: 0
+        latAuto: 0
+        tags: ~
+    items:
+      STR_AC_AP_AMMO: 6
+      STR_AUTO_CANNON: 1
+      STR_AVALANCHE_LAUNCHER: 1
+      STR_AVALANCHE_MISSILES: 10
+      STR_CANNON: 2
+      STR_CANNON_ROUNDS_X50: 1
+      STR_GRENADE: 5
+      STR_HC_AP_AMMO: 6
+      STR_HEAVY_CANNON: 1
+      STR_PISTOL: 2
+      STR_PISTOL_CLIP: 8
+      STR_RIFLE: 2
+      STR_RIFLE_CLIP: 8
+      STR_ROCKET_LAUNCHER: 1
+      STR_SMALL_ROCKET: 4
+      STR_SMOKE_GRENADE: 5
+      STR_STINGRAY_LAUNCHER: 1
+      STR_STINGRAY_MISSILES: 25
+    scientists: 10
+    engineers: 10
+alienMissions:
+  - type: STR_ALIEN_RESEARCH
+    region: STR_NORTH_AFRICA
+    race: STR_SECTOID
+    nextWave: 1
+    nextUfoCounter: 0
+    spawnCountdown: 3840
+    liveUfos: 0
+    uniqueID: 1
+    missionSiteZone: -1
+  - type: STR_ALIEN_TERROR
+    region: STR_SOUTH_AMERICA
+    race: STR_FLOATER
+    nextWave: 1
+    nextUfoCounter: 0
+    spawnCountdown: 2190
+    liveUfos: 0
+    uniqueID: 2
+    missionSiteZone: 3
+generatedEvents:
+  {}
+ufopediaRuleStatus:
+  {}
+manufactureRuleStatus:
+  {}
+researchRuleStatus:
+  {}
+hiddenPurchaseItems:
+  {}
+alienStrategy:
+  regions:
+    STR_ANTARCTICA: 4
+    STR_ARCTIC: 4
+    STR_AUSTRALASIA: 10
+    STR_CENTRAL_ASIA: 12
+    STR_EUROPE: 16
+    STR_NORTH_AFRICA: 12
+    STR_NORTH_AMERICA: 18
+    STR_PACIFIC: 5
+    STR_SIBERIA: 10
+    STR_SOUTHERN_AFRICA: 8
+    STR_SOUTH_AMERICA: 10
+    STR_SOUTH_EAST_ASIA: 15
+  possibleMissions:
+    - region: STR_ANTARCTICA
+      missions:
+        STR_ALIEN_BASE: 35
+        STR_ALIEN_RESEARCH: 25
+    - region: STR_ARCTIC
+      missions:
+        STR_ALIEN_BASE: 35
+        STR_ALIEN_RESEARCH: 25
+    - region: STR_AUSTRALASIA
+      missions:
+        STR_ALIEN_ABDUCTION: 4
+        STR_ALIEN_BASE: 16
+        STR_ALIEN_HARVEST: 11
+        STR_ALIEN_INFILTRATION: 8
+        STR_ALIEN_RESEARCH: 15
+    - region: STR_CENTRAL_ASIA
+      missions:
+        STR_ALIEN_ABDUCTION: 6
+        STR_ALIEN_BASE: 8
+        STR_ALIEN_HARVEST: 5
+        STR_ALIEN_INFILTRATION: 10
+        STR_ALIEN_RESEARCH: 5
+    - region: STR_EUROPE
+      missions:
+        STR_ALIEN_ABDUCTION: 15
+        STR_ALIEN_BASE: 6
+        STR_ALIEN_HARVEST: 10
+        STR_ALIEN_INFILTRATION: 20
+        STR_ALIEN_RESEARCH: 10
+    - region: STR_INDIAN_OCEAN
+      missions: ~
+    - region: STR_NORTH_AFRICA
+      missions:
+        STR_ALIEN_ABDUCTION: 8
+        STR_ALIEN_BASE: 19
+        STR_ALIEN_HARVEST: 8
+        STR_ALIEN_INFILTRATION: 8
+    - region: STR_NORTH_AMERICA
+      missions:
+        STR_ALIEN_ABDUCTION: 20
+        STR_ALIEN_BASE: 20
+        STR_ALIEN_HARVEST: 17
+        STR_ALIEN_INFILTRATION: 20
+        STR_ALIEN_RESEARCH: 14
+    - region: STR_NORTH_ATLANTIC
+      missions: ~
+    - region: STR_PACIFIC
+      missions:
+        STR_ALIEN_BASE: 27
+        STR_ALIEN_RESEARCH: 15
+    - region: STR_SIBERIA
+      missions:
+        STR_ALIEN_ABDUCTION: 4
+        STR_ALIEN_BASE: 9
+        STR_ALIEN_RESEARCH: 6
+    - region: STR_SOUTHERN_AFRICA
+      missions:
+        STR_ALIEN_ABDUCTION: 8
+        STR_ALIEN_BASE: 9
+        STR_ALIEN_HARVEST: 8
+        STR_ALIEN_INFILTRATION: 8
+        STR_ALIEN_RESEARCH: 7
+    - region: STR_SOUTH_AMERICA
+      missions:
+        STR_ALIEN_ABDUCTION: 12
+        STR_ALIEN_BASE: 22
+        STR_ALIEN_HARVEST: 24
+        STR_ALIEN_INFILTRATION: 18
+        STR_ALIEN_RESEARCH: 10
+    - region: STR_SOUTH_ATLANTIC
+      missions: ~
+    - region: STR_SOUTH_EAST_ASIA
+      missions:
+        STR_ALIEN_ABDUCTION: 21
+        STR_ALIEN_BASE: 8
+        STR_ALIEN_HARVEST: 13
+        STR_ALIEN_INFILTRATION: 13
+        STR_ALIEN_RESEARCH: 8
+  missionLocations:
+    {}
+  missionsRun:
+    {}
+tags: ~
