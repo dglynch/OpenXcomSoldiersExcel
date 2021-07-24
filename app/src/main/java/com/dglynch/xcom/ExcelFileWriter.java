@@ -31,6 +31,7 @@ public class ExcelFileWriter {
         headerRow.createCell(14).setCellValue("Melee");
         headerRow.createCell(15).setCellValue("Missions");
         headerRow.createCell(16).setCellValue("Kills");
+        headerRow.createCell(17).setCellValue("Score");
 
         int rowCount = 0;
         for (Soldier soldier : soldiers) {
@@ -54,6 +55,7 @@ public class ExcelFileWriter {
             row.createCell(14).setCellValue(soldier.getMelee());
             row.createCell(15).setCellValue(soldier.getMissions());
             row.createCell(16).setCellValue(soldier.getKills());
+            row.createCell(17).setCellValue(soldier.getPromotionScore());
         }
 
         sheet.autoSizeColumn(1);
