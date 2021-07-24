@@ -47,8 +47,10 @@ public class ExcelFileWriter {
             row.createCell(9).setCellValue(soldier.getFiring());
             row.createCell(10).setCellValue(soldier.getThrowing());
             row.createCell(11).setCellValue(soldier.getStrength());
-            row.createCell(12).setCellValue(soldier.getPsiStrength());
-            row.createCell(13).setCellValue(soldier.getPsiSkill());
+            if (soldier.getPsiSkill() > 0) {
+                row.createCell(12).setCellValue(soldier.getPsiStrength());
+                row.createCell(13).setCellValue(soldier.getPsiSkill());
+            }
             row.createCell(14).setCellValue(soldier.getMelee());
             row.createCell(15).setCellValue(soldier.getMissions());
             row.createCell(16).setCellValue(soldier.getKills());
