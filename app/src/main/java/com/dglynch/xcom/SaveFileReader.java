@@ -8,6 +8,15 @@ import java.util.List;
 import java.util.Map;
 
 public class SaveFileReader {
+    private static final Map<Integer, String> RANK_MAP = Map.of(
+            0, "Rookie",
+            1, "Squaddie",
+            2, "Sergeant",
+            3, "Captain",
+            4, "Colonel",
+            5, "Commander"
+    );
+
     @SuppressWarnings("unchecked")
     public static List<Soldier> readSoldiers(InputStream inputStream) {
         List<Soldier> result = new ArrayList<>();
@@ -19,7 +28,26 @@ public class SaveFileReader {
         for (Map<String, Object> base : bases) {
             List<Map<String, Object>> soldiers = (List<Map<String, Object>>) base.get("soldiers");
             for (Map<String, Object> soldier : soldiers) {
-                result.add(new Soldier((int) soldier.get("id"), (String) soldier.get("name")));
+                Map<String, Object> currentStats = (Map<String, Object>) soldier.get("currentStats");
+                result.add(new Soldier(
+                        (int) soldier.get("id"),
+                        (String) soldier.get("name"),
+                        (String) base.get("name"),
+                        RANK_MAP.get((Integer) soldier.get("rank")),
+                        (int) currentStats.get("tu"),
+                        (int) currentStats.get("stamina"),
+                        (int) currentStats.get("health"),
+                        (int) currentStats.get("bravery"),
+                        (int) currentStats.get("reactions"),
+                        (int) currentStats.get("firing"),
+                        (int) currentStats.get("throwing"),
+                        (int) currentStats.get("strength"),
+                        (int) currentStats.get("psiStrength"),
+                        (int) currentStats.get("psiSkill"),
+                        (int) currentStats.get("melee"),
+                        (int) soldier.get("missions"),
+                        (int) soldier.get("kills")
+                ));
             }
         }
         return result;
