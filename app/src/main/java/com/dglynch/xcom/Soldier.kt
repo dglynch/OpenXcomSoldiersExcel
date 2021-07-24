@@ -1,3 +1,3 @@
 package com.dglynch.xcom
 
-class Soldier(val name: String)
+data class Soldier(val name: String)
