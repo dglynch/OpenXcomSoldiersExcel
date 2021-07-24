@@ -59,6 +59,8 @@ public class ExcelFileWriter {
         }
 
         sheet.autoSizeColumn(1);
+        sheet.autoSizeColumn(2);
+        sheet.autoSizeColumn(3);
         workbook.write(outputStream);
     }
 }
