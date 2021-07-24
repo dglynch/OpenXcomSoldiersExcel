@@ -1,8 +1,7 @@
 package com.dglynch.xcom;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws IOException {
@@ -11,6 +10,12 @@ public class App {
         }
         String inputFileName = args[0];
         String outputFileName = args[1];
-        InputStream inputStream = new FileInputStream(inputFileName);
+        List<Soldier> soldiers;
+        try (InputStream inputStream = new FileInputStream(inputFileName)) {
+            soldiers = SaveFileReader.readSoldiers(inputStream);
+        }
+        try (OutputStream outputStream = new FileOutputStream(outputFileName)) {
+            ExcelFileWriter.writeSoldiers(soldiers, outputStream);
+        }
     }
 }

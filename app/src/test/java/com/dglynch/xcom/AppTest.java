@@ -1,16 +1,20 @@
 package com.dglynch.xcom;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class AppTest {
+    @TempDir
+    File tempDir;
+
     private static final String[] ZERO_ARGUMENTS = {};
     private static final String[] ONE_ARGUMENT = {"filename.sav"};
-    private static final String[] TWO_VALID_ARGUMENTS = {"src/test/resources/filename.sav", "filename.xlsx"};
     private static final String[] INVALID_INPUT_FILE_NAME = {"src/test/resources/invalid.sav", "filename.xlsx"};
 
     @Test
@@ -25,7 +29,8 @@ class AppTest {
 
     @Test
     void mainDoesNotThrowExceptionWhenTwoValidArguments() {
-        assertDoesNotThrow(() -> App.main(TWO_VALID_ARGUMENTS));
+        String[] twoValidArguments = {"src/test/resources/filename.sav", tempDir.getPath() + "/filename.xlsx"};
+        assertDoesNotThrow(() -> App.main(twoValidArguments));
     }
 
     @Test
