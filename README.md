@@ -15,3 +15,9 @@ installed:
     ./gradlew build run --args "/path/to/inputfile.sav /path/to/outputfile.xlsx"
 
 In the future, I may package the project for release in a more convenient executable form for ordinary users.
+
+## License
+
+OpenXcom Soldiers Excel is free software: you can redistribute it and/or modify it under the terms of the GNU General
+Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any
+later version. See [COPYING](COPYING) for details.
