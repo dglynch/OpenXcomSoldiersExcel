@@ -20,7 +20,7 @@ public class ExcelFileWriter {
         int rowCount = 0;
         for (Soldier soldier : soldiers) {
             Row row = sheet.createRow(++rowCount);
-            row.createCell(0).setCellValue(rowCount);
+            row.createCell(0).setCellValue(soldier.getId());
             row.createCell(1).setCellValue(soldier.getName());
         }
 

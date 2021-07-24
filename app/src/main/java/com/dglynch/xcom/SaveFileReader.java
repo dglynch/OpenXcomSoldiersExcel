@@ -19,7 +19,7 @@ public class SaveFileReader {
         for (Map<String, Object> base : bases) {
             List<Map<String, Object>> soldiers = (List<Map<String, Object>>) base.get("soldiers");
             for (Map<String, Object> soldier : soldiers) {
-                result.add(new Soldier((String) soldier.get("name")));
+                result.add(new Soldier((int) soldier.get("id"), (String) soldier.get("name")));
             }
         }
         return result;
