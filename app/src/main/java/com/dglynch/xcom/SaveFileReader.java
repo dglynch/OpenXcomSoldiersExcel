@@ -53,6 +53,8 @@ public class SaveFileReader {
                         (String) soldier.get("name"),
                         (String) base.get("name"),
                         RANK_MAP.get((Integer) soldier.get("rank")),
+                        (int) soldier.get("missions"),
+                        (int) soldier.get("kills"),
                         (int) currentStats.get("tu"),
                         (int) currentStats.get("stamina"),
                         (int) currentStats.get("health"),
@@ -60,12 +62,10 @@ public class SaveFileReader {
                         (int) currentStats.get("reactions"),
                         (int) currentStats.get("firing"),
                         (int) currentStats.get("throwing"),
+                        (int) currentStats.get("melee"),
                         (int) currentStats.get("strength"),
                         (int) currentStats.get("psiStrength"),
-                        (int) currentStats.get("psiSkill"),
-                        (int) currentStats.get("melee"),
-                        (int) soldier.get("missions"),
-                        (int) soldier.get("kills")
+                        (int) currentStats.get("psiSkill")
                 ));
             }
         }

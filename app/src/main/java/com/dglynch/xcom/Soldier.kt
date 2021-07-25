@@ -24,6 +24,8 @@ data class Soldier(
     val name: String,
     val base: String,
     val rank: String,
+    val missions: Int,
+    val kills: Int,
     val timeUnits: Int,
     val stamina: Int,
     val health: Int,
@@ -31,12 +33,10 @@ data class Soldier(
     val reactions: Int,
     val firing: Int,
     val throwing: Int,
+    val melee: Int,
     val strength: Int,
     val psiStrength: Int,
     val psiSkill: Int,
-    val melee: Int,
-    val missions: Int,
-    val kills: Int,
 ) {
     fun getPromotionScore(): Int {
         return 2 * health + 2 * stamina + 4 * reactions + 4 * bravery + 3 * timeUnits +
