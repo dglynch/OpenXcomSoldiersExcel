@@ -39,18 +39,19 @@ public class ExcelFileWriter {
         headerRow.createCell(3).setCellValue("Rank");
         headerRow.createCell(4).setCellValue("Missions");
         headerRow.createCell(5).setCellValue("Kills");
-        headerRow.createCell(6).setCellValue("Time Units");
-        headerRow.createCell(7).setCellValue("Stamina");
-        headerRow.createCell(8).setCellValue("Health");
-        headerRow.createCell(9).setCellValue("Bravery");
-        headerRow.createCell(10).setCellValue("Reactions");
-        headerRow.createCell(11).setCellValue("Firing");
-        headerRow.createCell(12).setCellValue("Throwing");
-        headerRow.createCell(13).setCellValue("Melee");
-        headerRow.createCell(14).setCellValue("Strength");
-        headerRow.createCell(15).setCellValue("PSI Strength");
-        headerRow.createCell(16).setCellValue("PSI Skill");
-        headerRow.createCell(17).setCellValue("Score");
+        headerRow.createCell(6).setCellValue("Days Wounded");
+        headerRow.createCell(7).setCellValue("Time Units");
+        headerRow.createCell(8).setCellValue("Stamina");
+        headerRow.createCell(9).setCellValue("Health");
+        headerRow.createCell(10).setCellValue("Bravery");
+        headerRow.createCell(11).setCellValue("Reactions");
+        headerRow.createCell(12).setCellValue("Firing");
+        headerRow.createCell(13).setCellValue("Throwing");
+        headerRow.createCell(14).setCellValue("Melee");
+        headerRow.createCell(15).setCellValue("Strength");
+        headerRow.createCell(16).setCellValue("PSI Strength");
+        headerRow.createCell(17).setCellValue("PSI Skill");
+        headerRow.createCell(18).setCellValue("Score");
 
         int rowCount = 0;
         for (Soldier soldier : soldiers) {
@@ -61,20 +62,23 @@ public class ExcelFileWriter {
             row.createCell(3).setCellValue(soldier.getRank());
             row.createCell(4).setCellValue(soldier.getMissions());
             row.createCell(5).setCellValue(soldier.getKills());
-            row.createCell(6).setCellValue(soldier.getTimeUnits());
-            row.createCell(7).setCellValue(soldier.getStamina());
-            row.createCell(8).setCellValue(soldier.getHealth());
-            row.createCell(9).setCellValue(soldier.getBravery());
-            row.createCell(10).setCellValue(soldier.getReactions());
-            row.createCell(11).setCellValue(soldier.getFiring());
-            row.createCell(12).setCellValue(soldier.getThrowing());
-            row.createCell(13).setCellValue(soldier.getMelee());
-            row.createCell(14).setCellValue(soldier.getStrength());
-            if (soldier.getPsiSkill() > 0) {
-                row.createCell(15).setCellValue(soldier.getPsiStrength());
-                row.createCell(16).setCellValue(soldier.getPsiSkill());
+            if (soldier.getRecovery() > 0) {
+                row.createCell(6).setCellValue(soldier.getRecovery());
             }
-            row.createCell(17).setCellValue(soldier.getPromotionScore());
+            row.createCell(7).setCellValue(soldier.getTimeUnits());
+            row.createCell(8).setCellValue(soldier.getStamina());
+            row.createCell(9).setCellValue(soldier.getHealth());
+            row.createCell(10).setCellValue(soldier.getBravery());
+            row.createCell(11).setCellValue(soldier.getReactions());
+            row.createCell(12).setCellValue(soldier.getFiring());
+            row.createCell(13).setCellValue(soldier.getThrowing());
+            row.createCell(14).setCellValue(soldier.getMelee());
+            row.createCell(15).setCellValue(soldier.getStrength());
+            if (soldier.getPsiSkill() > 0) {
+                row.createCell(16).setCellValue(soldier.getPsiStrength());
+                row.createCell(17).setCellValue(soldier.getPsiSkill());
+            }
+            row.createCell(18).setCellValue(soldier.getPromotionScore());
         }
 
         sheet.autoSizeColumn(1);

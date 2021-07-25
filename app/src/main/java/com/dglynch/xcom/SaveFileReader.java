@@ -55,6 +55,7 @@ public class SaveFileReader {
                         RANK_MAP.get((Integer) soldier.get("rank")),
                         (int) soldier.get("missions"),
                         (int) soldier.get("kills"),
+                        (int) soldier.getOrDefault("recovery", 0),
                         (int) currentStats.get("tu"),
                         (int) currentStats.get("stamina"),
                         (int) currentStats.get("health"),

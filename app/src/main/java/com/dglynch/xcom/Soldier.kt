@@ -26,6 +26,7 @@ data class Soldier(
     val rank: String,
     val missions: Int,
     val kills: Int,
+    val recovery: Int,
     val timeUnits: Int,
     val stamina: Int,
     val health: Int,
