@@ -56,6 +56,7 @@ public class SaveFileReader {
                         (int) soldier.get("missions"),
                         (int) soldier.get("kills"),
                         (int) soldier.getOrDefault("recovery", 0),
+                        (boolean) soldier.getOrDefault("psiTraining", false),
                         (int) currentStats.get("tu"),
                         (int) currentStats.get("stamina"),
                         (int) currentStats.get("health"),

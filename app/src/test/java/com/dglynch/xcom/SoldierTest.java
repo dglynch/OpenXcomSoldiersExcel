@@ -29,7 +29,7 @@ class SoldierTest {
     @Test
     void getPromotionScoreWithPsiTraining() {
         Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
-                0, 50, 49, 48, 40, 51, 52, 53,
+                0, false, 50, 49, 48, 40, 51, 52, 53,
                 57, 54, 55, 56);
         assertThat(soldier.getPromotionScore(), is(equalTo(1421)));
     }
@@ -37,7 +37,7 @@ class SoldierTest {
     @Test
     void getPromotionScoreWithoutPsiTraining() {
         Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
-                0, 50, 49, 48, 40, 51, 52, 53,
+                0, false, 50, 49, 48, 40, 51, 52, 53,
                 57, 54, 55, 0);
         assertThat(soldier.getPromotionScore(), is(equalTo(1254)));
     }

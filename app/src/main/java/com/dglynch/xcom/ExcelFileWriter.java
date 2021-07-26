@@ -41,6 +41,7 @@ public class ExcelFileWriter {
         headerRow.createCell(columnNumber++).setCellValue("Missions");
         headerRow.createCell(columnNumber++).setCellValue("Kills");
         headerRow.createCell(columnNumber++).setCellValue("Days Wounded");
+        headerRow.createCell(columnNumber++).setCellValue("PSI Training");
         headerRow.createCell(columnNumber++).setCellValue("Time Units");
         headerRow.createCell(columnNumber++).setCellValue("Stamina");
         headerRow.createCell(columnNumber++).setCellValue("Health");
@@ -67,6 +68,10 @@ public class ExcelFileWriter {
             row.createCell(columnNumber++).setCellValue(soldier.getKills());
             if (soldier.getRecovery() > 0) {
                 row.createCell(columnNumber).setCellValue(soldier.getRecovery());
+            }
+            columnNumber++;
+            if (soldier.getPsiTraining()) {
+                row.createCell(columnNumber).setCellValue(soldier.getPsiTraining());
             }
             columnNumber++;
             row.createCell(columnNumber++).setCellValue(soldier.getTimeUnits());
