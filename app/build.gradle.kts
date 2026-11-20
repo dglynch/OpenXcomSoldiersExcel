@@ -1,5 +1,7 @@
 plugins {
     application
+    id("com.diffplug.spotless") version "8.10.2"
+    id("dev.openjavaformat.java-format") version "21.0.2"
 }
 
 repositories {
@@ -19,6 +21,12 @@ dependencies {
 
 application {
     mainClass.set("com.dglynch.xcom.App")
+}
+
+spotless {
+    java {
+        target("src/**/*.java")
+    }
 }
 
 tasks.test {
