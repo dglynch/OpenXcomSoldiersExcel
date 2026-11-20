@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Dan Lynch
+    Copyright 2021, 2026 Dan Lynch
 
     This file is part of OpenXcom Soldiers Excel.
 
@@ -31,7 +31,7 @@ class SoldierTest {
         Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
                 0, false, 50, 49, 48, 40, 51, 52, 53,
                 57, 54, 55, 56);
-        assertThat(soldier.getPromotionScore(), is(equalTo(1421)));
+        assertThat(soldier.promotionScore(), is(equalTo(1421)));
     }
 
     @Test
@@ -39,6 +39,6 @@ class SoldierTest {
         Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
                 0, false, 50, 49, 48, 40, 51, 52, 53,
                 57, 54, 55, 0);
-        assertThat(soldier.getPromotionScore(), is(equalTo(1254)));
+        assertThat(soldier.promotionScore(), is(equalTo(1254)));
     }
 }

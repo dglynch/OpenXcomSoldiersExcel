@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Dan Lynch
+    Copyright 2021, 2026 Dan Lynch
 
     This file is part of OpenXcom Soldiers Excel.
 
@@ -60,36 +60,36 @@ public class ExcelFileWriter {
         for (Soldier soldier : soldiers) {
             Row row = sheet.createRow(++rowCount);
             columnNumber = 0;
-            row.createCell(columnNumber++).setCellValue(soldier.getId());
-            row.createCell(columnNumber++).setCellValue(soldier.getName());
-            row.createCell(columnNumber++).setCellValue(soldier.getBase());
-            row.createCell(columnNumber++).setCellValue(soldier.getRank());
-            row.createCell(columnNumber++).setCellValue(soldier.getMissions());
-            row.createCell(columnNumber++).setCellValue(soldier.getKills());
-            if (soldier.getRecovery() > 0) {
-                row.createCell(columnNumber).setCellValue(soldier.getRecovery());
+            row.createCell(columnNumber++).setCellValue(soldier.id());
+            row.createCell(columnNumber++).setCellValue(soldier.name());
+            row.createCell(columnNumber++).setCellValue(soldier.base());
+            row.createCell(columnNumber++).setCellValue(soldier.rank());
+            row.createCell(columnNumber++).setCellValue(soldier.missions());
+            row.createCell(columnNumber++).setCellValue(soldier.kills());
+            if (soldier.recovery() > 0) {
+                row.createCell(columnNumber).setCellValue(soldier.recovery());
             }
             columnNumber++;
-            if (soldier.getPsiTraining()) {
-                row.createCell(columnNumber).setCellValue(soldier.getPsiTraining());
+            if (soldier.psiTraining()) {
+                row.createCell(columnNumber).setCellValue(soldier.psiTraining());
             }
             columnNumber++;
-            row.createCell(columnNumber++).setCellValue(soldier.getTimeUnits());
-            row.createCell(columnNumber++).setCellValue(soldier.getStamina());
-            row.createCell(columnNumber++).setCellValue(soldier.getHealth());
-            row.createCell(columnNumber++).setCellValue(soldier.getBravery());
-            row.createCell(columnNumber++).setCellValue(soldier.getReactions());
-            row.createCell(columnNumber++).setCellValue(soldier.getFiring());
-            row.createCell(columnNumber++).setCellValue(soldier.getThrowing());
-            row.createCell(columnNumber++).setCellValue(soldier.getMelee());
-            row.createCell(columnNumber++).setCellValue(soldier.getStrength());
-            if (soldier.getPsiSkill() > 0) {
-                row.createCell(columnNumber).setCellValue(soldier.getPsiStrength());
-                row.createCell(columnNumber + 1).setCellValue(soldier.getPsiSkill());
+            row.createCell(columnNumber++).setCellValue(soldier.timeUnits());
+            row.createCell(columnNumber++).setCellValue(soldier.stamina());
+            row.createCell(columnNumber++).setCellValue(soldier.health());
+            row.createCell(columnNumber++).setCellValue(soldier.bravery());
+            row.createCell(columnNumber++).setCellValue(soldier.reactions());
+            row.createCell(columnNumber++).setCellValue(soldier.firing());
+            row.createCell(columnNumber++).setCellValue(soldier.throwing());
+            row.createCell(columnNumber++).setCellValue(soldier.melee());
+            row.createCell(columnNumber++).setCellValue(soldier.strength());
+            if (soldier.psiSkill() > 0) {
+                row.createCell(columnNumber).setCellValue(soldier.psiStrength());
+                row.createCell(columnNumber + 1).setCellValue(soldier.psiSkill());
             }
             columnNumber += 2;
             //noinspection UnusedAssignment
-            row.createCell(columnNumber++).setCellValue(soldier.getPromotionScore());
+            row.createCell(columnNumber++).setCellValue(soldier.promotionScore());
         }
 
         sheet.autoSizeColumn(1);

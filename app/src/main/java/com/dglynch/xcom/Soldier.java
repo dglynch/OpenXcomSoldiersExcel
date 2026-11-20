@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Dan Lynch
+    Copyright 2021, 2026 Dan Lynch
 
     This file is part of OpenXcom Soldiers Excel.
 
@@ -17,32 +17,32 @@
     this program; if not, see <http://www.gnu.org/licenses>.
 */
 
-package com.dglynch.xcom
+package com.dglynch.xcom;
 
-data class Soldier(
-    val id: Int,
-    val name: String,
-    val base: String,
-    val rank: String,
-    val missions: Int,
-    val kills: Int,
-    val recovery: Int,
-    val psiTraining: Boolean,
-    val timeUnits: Int,
-    val stamina: Int,
-    val health: Int,
-    val bravery: Int,
-    val reactions: Int,
-    val firing: Int,
-    val throwing: Int,
-    val melee: Int,
-    val strength: Int,
-    val psiStrength: Int,
-    val psiSkill: Int,
+public record Soldier(
+        int id,
+        String name,
+        String base,
+        String rank,
+        int missions,
+        int kills,
+        int recovery,
+        boolean psiTraining,
+        int timeUnits,
+        int stamina,
+        int health,
+        int bravery,
+        int reactions,
+        int firing,
+        int throwing,
+        int melee,
+        int strength,
+        int psiStrength,
+        int psiSkill
 ) {
-    fun getPromotionScore(): Int {
+    public int promotionScore() {
         return 2 * health + 2 * stamina + 4 * reactions + 4 * bravery + 3 * timeUnits +
                 6 * firing + melee + throwing + strength + 10 * missions + 10 * kills +
-                if (psiSkill > 0) (psiStrength + 2 * psiSkill) else 0;
+                (psiSkill > 0 ? psiStrength + 2 * psiSkill : 0);
     }
 }

@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Dan Lynch
+    Copyright 2021, 2026 Dan Lynch
 
     This file is part of OpenXcom Soldiers Excel.
 
@@ -33,7 +33,7 @@ class SaveFileReaderTest {
     void readSoldiersHasExpectedSoldier() throws IOException {
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("filename.sav")) {
             List<Soldier> soldiers = SaveFileReader.readSoldiers(inputStream);
-            assertThat(soldiers, hasItem(hasProperty("name", equalTo("Lindsay Collins"))));
+            assertThat(soldiers.stream().map(Soldier::name).toList(), hasItem(equalTo("Lindsay Collins")));
         }
     }
 
