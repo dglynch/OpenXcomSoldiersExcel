@@ -7,13 +7,14 @@ repositories {
 }
 
 dependencies {
-    implementation("org.yaml:snakeyaml:1.29")
-    implementation("org.apache.poi:poi:5.0.0")
-    implementation("org.apache.poi:poi-ooxml:5.0.0")
+    implementation("org.yaml:snakeyaml:2.7")
+    implementation("org.apache.poi:poi:6.0.0")
+    implementation("org.apache.poi:poi-ooxml:6.0.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.26.1")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
-    testImplementation("org.hamcrest:hamcrest:2.2")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.7.1")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
+    testImplementation("org.hamcrest:hamcrest:3.0")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.1.3")
 }
 
 application {
