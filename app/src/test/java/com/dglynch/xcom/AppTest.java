@@ -1,5 +1,5 @@
 /*
-    Copyright 2021 Dan Lynch
+    Copyright 2021, 2026 Dan Lynch
 
     This file is part of OpenXcom Soldiers Excel.
 
@@ -19,14 +19,13 @@
 
 package com.dglynch.xcom;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 class AppTest {
     @TempDir
