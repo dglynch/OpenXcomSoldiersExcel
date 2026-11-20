@@ -32,8 +32,7 @@ public class SaveFileReader {
             2, "Sergeant",
             3, "Captain",
             4, "Colonel",
-            5, "Commander"
-    );
+            5, "Commander");
 
     @SuppressWarnings("unchecked")
     public static List<Soldier> readSoldiers(InputStream inputStream) {
@@ -41,7 +40,8 @@ public class SaveFileReader {
         Yaml yaml = new Yaml();
         Iterable<Object> allDocuments = yaml.loadAll(inputStream);
         allDocuments.iterator().next(); // skip first YAML document in save file
-        Map<String, Object> secondDocument = (Map<String, Object>) allDocuments.iterator().next();
+        Map<String, Object> secondDocument =
+                (Map<String, Object>) allDocuments.iterator().next();
         List<Map<String, Object>> bases = (List<Map<String, Object>>) secondDocument.get("bases");
         for (Map<String, Object> base : bases) {
             List<Map<String, Object>> soldiers = (List<Map<String, Object>>) base.get("soldiers");
@@ -66,8 +66,7 @@ public class SaveFileReader {
                         (int) currentStats.get("melee"),
                         (int) currentStats.get("strength"),
                         (int) currentStats.get("psiStrength"),
-                        (int) currentStats.get("psiSkill")
-                ));
+                        (int) currentStats.get("psiSkill")));
             }
         }
         return result;

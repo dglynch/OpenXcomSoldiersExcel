@@ -28,17 +28,15 @@ import org.junit.jupiter.api.Test;
 class SoldierTest {
     @Test
     void getPromotionScoreWithPsiTraining() {
-        Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
-                0, false, 50, 49, 48, 40, 51, 52, 53,
-                57, 54, 55, 56);
+        Soldier soldier = new Soldier(
+                0, "John Doe", "Some Bbase", "Squaddie", 4, 3, 0, false, 50, 49, 48, 40, 51, 52, 53, 57, 54, 55, 56);
         assertThat(soldier.promotionScore(), is(equalTo(1421)));
     }
 
     @Test
     void getPromotionScoreWithoutPsiTraining() {
-        Soldier soldier = new Soldier(0, "John Doe", "Some Bbase", "Squaddie", 4, 3,
-                0, false, 50, 49, 48, 40, 51, 52, 53,
-                57, 54, 55, 0);
+        Soldier soldier = new Soldier(
+                0, "John Doe", "Some Bbase", "Squaddie", 4, 3, 0, false, 50, 49, 48, 40, 51, 52, 53, 57, 54, 55, 0);
         assertThat(soldier.promotionScore(), is(equalTo(1254)));
     }
 }
