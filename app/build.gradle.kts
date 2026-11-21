@@ -29,6 +29,10 @@ spotless {
     }
 }
 
+tasks.withType<JavaCompile>().configureEach {
+    options.compilerArgs.addAll(listOf("-Xlint:all", "-Werror"))
+}
+
 tasks.test {
     useJUnitPlatform()
 }
