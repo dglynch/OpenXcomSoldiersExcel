@@ -28,70 +28,71 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelFileWriter {
     public static void writeSoldiers(List<Soldier> soldiers, OutputStream outputStream) throws IOException {
-        XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("Sheet1");
+        try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+            XSSFSheet sheet = workbook.createSheet("Sheet1");
 
-        Row headerRow = sheet.createRow(0);
-        int columnNumber = 0;
-        headerRow.createCell(columnNumber++).setCellValue("Id");
-        headerRow.createCell(columnNumber++).setCellValue("Name");
-        headerRow.createCell(columnNumber++).setCellValue("Base");
-        headerRow.createCell(columnNumber++).setCellValue("Rank");
-        headerRow.createCell(columnNumber++).setCellValue("Missions");
-        headerRow.createCell(columnNumber++).setCellValue("Kills");
-        headerRow.createCell(columnNumber++).setCellValue("Days Wounded");
-        headerRow.createCell(columnNumber++).setCellValue("PSI Training");
-        headerRow.createCell(columnNumber++).setCellValue("Time Units");
-        headerRow.createCell(columnNumber++).setCellValue("Stamina");
-        headerRow.createCell(columnNumber++).setCellValue("Health");
-        headerRow.createCell(columnNumber++).setCellValue("Bravery");
-        headerRow.createCell(columnNumber++).setCellValue("Reactions");
-        headerRow.createCell(columnNumber++).setCellValue("Firing");
-        headerRow.createCell(columnNumber++).setCellValue("Throwing");
-        headerRow.createCell(columnNumber++).setCellValue("Melee");
-        headerRow.createCell(columnNumber++).setCellValue("Strength");
-        headerRow.createCell(columnNumber++).setCellValue("PSI Strength");
-        headerRow.createCell(columnNumber++).setCellValue("PSI Skill");
-        headerRow.createCell(columnNumber).setCellValue("Score");
+            Row headerRow = sheet.createRow(0);
+            int columnNumber = 0;
+            headerRow.createCell(columnNumber++).setCellValue("Id");
+            headerRow.createCell(columnNumber++).setCellValue("Name");
+            headerRow.createCell(columnNumber++).setCellValue("Base");
+            headerRow.createCell(columnNumber++).setCellValue("Rank");
+            headerRow.createCell(columnNumber++).setCellValue("Missions");
+            headerRow.createCell(columnNumber++).setCellValue("Kills");
+            headerRow.createCell(columnNumber++).setCellValue("Days Wounded");
+            headerRow.createCell(columnNumber++).setCellValue("PSI Training");
+            headerRow.createCell(columnNumber++).setCellValue("Time Units");
+            headerRow.createCell(columnNumber++).setCellValue("Stamina");
+            headerRow.createCell(columnNumber++).setCellValue("Health");
+            headerRow.createCell(columnNumber++).setCellValue("Bravery");
+            headerRow.createCell(columnNumber++).setCellValue("Reactions");
+            headerRow.createCell(columnNumber++).setCellValue("Firing");
+            headerRow.createCell(columnNumber++).setCellValue("Throwing");
+            headerRow.createCell(columnNumber++).setCellValue("Melee");
+            headerRow.createCell(columnNumber++).setCellValue("Strength");
+            headerRow.createCell(columnNumber++).setCellValue("PSI Strength");
+            headerRow.createCell(columnNumber++).setCellValue("PSI Skill");
+            headerRow.createCell(columnNumber).setCellValue("Score");
 
-        int rowCount = 0;
-        for (Soldier soldier : soldiers) {
-            Row row = sheet.createRow(++rowCount);
-            columnNumber = 0;
-            row.createCell(columnNumber++).setCellValue(soldier.id());
-            row.createCell(columnNumber++).setCellValue(soldier.name());
-            row.createCell(columnNumber++).setCellValue(soldier.base());
-            row.createCell(columnNumber++).setCellValue(soldier.rank());
-            row.createCell(columnNumber++).setCellValue(soldier.missions());
-            row.createCell(columnNumber++).setCellValue(soldier.kills());
-            if (soldier.recovery() > 0) {
-                row.createCell(columnNumber).setCellValue(soldier.recovery());
+            int rowCount = 0;
+            for (Soldier soldier : soldiers) {
+                Row row = sheet.createRow(++rowCount);
+                columnNumber = 0;
+                row.createCell(columnNumber++).setCellValue(soldier.id());
+                row.createCell(columnNumber++).setCellValue(soldier.name());
+                row.createCell(columnNumber++).setCellValue(soldier.base());
+                row.createCell(columnNumber++).setCellValue(soldier.rank());
+                row.createCell(columnNumber++).setCellValue(soldier.missions());
+                row.createCell(columnNumber++).setCellValue(soldier.kills());
+                if (soldier.recovery() > 0) {
+                    row.createCell(columnNumber).setCellValue(soldier.recovery());
+                }
+                columnNumber++;
+                if (soldier.psiTraining()) {
+                    row.createCell(columnNumber).setCellValue(true);
+                }
+                columnNumber++;
+                row.createCell(columnNumber++).setCellValue(soldier.timeUnits());
+                row.createCell(columnNumber++).setCellValue(soldier.stamina());
+                row.createCell(columnNumber++).setCellValue(soldier.health());
+                row.createCell(columnNumber++).setCellValue(soldier.bravery());
+                row.createCell(columnNumber++).setCellValue(soldier.reactions());
+                row.createCell(columnNumber++).setCellValue(soldier.firing());
+                row.createCell(columnNumber++).setCellValue(soldier.throwing());
+                row.createCell(columnNumber++).setCellValue(soldier.melee());
+                row.createCell(columnNumber++).setCellValue(soldier.strength());
+                if (soldier.psiSkill() > 0) {
+                    row.createCell(columnNumber).setCellValue(soldier.psiStrength());
+                    row.createCell(columnNumber + 1).setCellValue(soldier.psiSkill());
+                }
+                columnNumber += 2;
+                row.createCell(columnNumber).setCellValue(soldier.promotionScore());
             }
-            columnNumber++;
-            if (soldier.psiTraining()) {
-                row.createCell(columnNumber).setCellValue(true);
-            }
-            columnNumber++;
-            row.createCell(columnNumber++).setCellValue(soldier.timeUnits());
-            row.createCell(columnNumber++).setCellValue(soldier.stamina());
-            row.createCell(columnNumber++).setCellValue(soldier.health());
-            row.createCell(columnNumber++).setCellValue(soldier.bravery());
-            row.createCell(columnNumber++).setCellValue(soldier.reactions());
-            row.createCell(columnNumber++).setCellValue(soldier.firing());
-            row.createCell(columnNumber++).setCellValue(soldier.throwing());
-            row.createCell(columnNumber++).setCellValue(soldier.melee());
-            row.createCell(columnNumber++).setCellValue(soldier.strength());
-            if (soldier.psiSkill() > 0) {
-                row.createCell(columnNumber).setCellValue(soldier.psiStrength());
-                row.createCell(columnNumber + 1).setCellValue(soldier.psiSkill());
-            }
-            columnNumber += 2;
-            row.createCell(columnNumber).setCellValue(soldier.promotionScore());
+
+            sheet.autoSizeColumn(1);
+            sheet.autoSizeColumn(2);
+            sheet.autoSizeColumn(3);
+            workbook.write(outputStream);
         }
-
-        sheet.autoSizeColumn(1);
-        sheet.autoSizeColumn(2);
-        sheet.autoSizeColumn(3);
-        workbook.write(outputStream);
     }
 }
