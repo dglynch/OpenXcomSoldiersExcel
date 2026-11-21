@@ -52,8 +52,7 @@ public class ExcelFileWriter {
         headerRow.createCell(columnNumber++).setCellValue("Strength");
         headerRow.createCell(columnNumber++).setCellValue("PSI Strength");
         headerRow.createCell(columnNumber++).setCellValue("PSI Skill");
-        //noinspection UnusedAssignment
-        headerRow.createCell(columnNumber++).setCellValue("Score");
+        headerRow.createCell(columnNumber).setCellValue("Score");
 
         int rowCount = 0;
         for (Soldier soldier : soldiers) {
@@ -70,7 +69,7 @@ public class ExcelFileWriter {
             }
             columnNumber++;
             if (soldier.psiTraining()) {
-                row.createCell(columnNumber).setCellValue(soldier.psiTraining());
+                row.createCell(columnNumber).setCellValue(true);
             }
             columnNumber++;
             row.createCell(columnNumber++).setCellValue(soldier.timeUnits());
@@ -87,8 +86,7 @@ public class ExcelFileWriter {
                 row.createCell(columnNumber + 1).setCellValue(soldier.psiSkill());
             }
             columnNumber += 2;
-            //noinspection UnusedAssignment
-            row.createCell(columnNumber++).setCellValue(soldier.promotionScore());
+            row.createCell(columnNumber).setCellValue(soldier.promotionScore());
         }
 
         sheet.autoSizeColumn(1);
