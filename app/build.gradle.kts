@@ -1,7 +1,7 @@
 plugins {
     application
     id("com.diffplug.spotless") version "8.10.2"
-    id("dev.openjavaformat.java-format") version "21.0.2"
+    id("dev.openjavaformat.java-format") version "21.1.1"
 }
 
 repositories {
